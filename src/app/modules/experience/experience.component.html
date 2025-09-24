@@ -1,0 +1,19 @@
+<section class="experience-section">
+    <h2 class="section-title">Experience</h2>
+    <div class="card-grid">
+      <div class="flip-card" *ngFor="let exp of experiences">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3>{{ exp.title }}</h3>
+            <p>{{ exp.company }}</p>
+            <!-- <small>{{ exp.duration }}</small> -->
+            <p class="click-note">Click to flip</p>
+          </div>
+          <div class="flip-card-back">
+            <p>{{ exp.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

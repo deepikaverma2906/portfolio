@@ -1,0 +1,120 @@
+<!-- <nav class="navbar">
+  <ul class="nav-links">
+    <li><a routerLink="/home">Home</a></li>
+    <li><a routerLink="/skills">Skills</a></li>
+    <li><a routerLink="/projects">Projects</a></li>
+    <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+    <li><a routerLink="/experience">Experience</a></li>
+    <li><a routerLink="/about">About</a></li>
+
+  </ul>
+</nav> -->
+
+
+
+<!-- <nav class="custom-navbar">
+  <div class="logo">Deepika Verma</div>
+  <ul class="nav-links"> -->
+    <!-- <li><a routerLink="/home">Home</a></li>
+    <li><a routerLink="/skills">Skills</a></li>
+    <li><a routerLink="/projects">Projects</a></li>
+    <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+    <li><a routerLink="/experience">Experience</a></li>
+    <li><a routerLink="/about">About</a></li> -->
+
+    <!-- <li><a href="#home">Home</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#about">About</a></li>
+
+  </ul>
+</nav>
+<section id="home" data-aos="fade-up">
+  <app-home></app-home>
+</section>
+<section id="skills" data-aos="fade-up">
+  <app-skills></app-skills>
+</section>
+<section id="projects" data-aos="fade-up">
+  <app-projects></app-projects>
+</section>
+<section id="experience" data-aos="fade-up">
+  <app-experience></app-experience>
+</section>
+<section id="about" data-aos="fade-up">
+  <app-about></app-about>
+</section>
+<section id="contact" data-aos="fade-up">
+  <app-contact></app-contact>
+</section> -->
+
+<!-- <router-outlet></router-outlet> -->
+<!-- Navigation Bar -->
+<!-- <nav class="custom-navbar">
+  <div class="logo">Deepika Verma</div>
+  <ul class="nav-links">
+    
+    <li><a href="#home">Home</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+</nav> -->
+
+<nav class="custom-navbar">
+  <div class="logo">Deepika Verma</div>
+  <ul class="nav-links">
+    <li><a (click)="scrollToSection('home')">Home</a></li>
+    <li><a (click)="scrollToSection('skills')">Skills</a></li>
+    <li><a (click)="scrollToSection('projects')">Projects</a></li>
+    <li><a (click)="scrollToSection('experience')">Experience</a></li>
+    <li><a (click)="scrollToSection('about')">About</a></li>
+    <li><a (click)="scrollToSection('contact')">Contact</a></li>
+  </ul>
+</nav>
+
+
+<!-- Section Layout -->
+<section id="home" data-aos="fade-up">
+  <app-home></app-home>
+</section>
+
+<section id="skills" data-aos="fade-up">
+  <app-skills></app-skills>
+</section>
+
+<section id="projects" data-aos="fade-up">
+  <app-projects></app-projects>
+</section>
+
+<section id="experience" data-aos="fade-up">
+  <app-experience></app-experience>
+</section>
+
+<section id="contact" data-aos="fade-up">
+  <app-contact></app-contact>
+</section>
+
+<section id="about" data-aos="fade-up">
+  <app-about></app-about>
+</section>
+
+<!-- <section id="footer" data-aos="fade-up">
+  <app-footer></app-footer>
+</section> -->
+
+
+<!-- 🔽 GLOBAL SCROLL ARROW -->
+<!-- <div class="scroll-arrow" (click)="scrollToNextSection()">
+  <i class="fas fa-angle-double-down"></i>
+</div> -->
+
+<!-- <div class="scroll-arrow" *ngIf="showArrow" (click)="scrollToNextSection()">
+  <i class="fas fa-angle-double-down"></i>
+</div> -->
+
+<app-footer></app-footer>

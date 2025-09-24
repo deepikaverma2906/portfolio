@@ -1,0 +1,114 @@
+<!-- <div class="contact-container">
+  <h2>Contact Me</h2>
+
+  <form (ngSubmit)="onSubmit()" [formGroup]="contactForm" class="contact-form">
+    <div class="form-group">
+      <label for="name">Name<span class="required">*</span></label>
+      <input formControlName="name" id="name" type="text" required />
+    </div>
+    <small *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched" style="color:red;">
+      Name is required.
+    </small>
+
+
+    <div class="form-group">
+      <label for="email">Email<span class="required">*</span></label>
+      <input formControlName="email" id="email" type="email" required />
+    </div>
+    <small *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched" style="color:red;">
+      Please enter a valid email address.
+    </small>
+
+    <div class="form-group">
+      <label for="phone">Phone<span class="required">*</span></label>
+      <input formControlName="phone" id="phone" type="text" required />
+    </div>
+    <small *ngIf="contactForm.get('phone')?.invalid && contactForm.get('phone')?.touched" style="color:rgb(253, 2, 2);">
+      Please enter a valid 10-digit phone number.
+    </small>
+
+
+    <div class="form-group">
+      <label for="message">Message<span class="required">*</span></label>
+      <textarea formControlName="message" id="message" rows="5" required></textarea>
+    </div>
+    <small *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched" style="color:red;">
+      Message is required.
+    </small>
+
+    <div class="btn-container">
+      <button type="submit" [disabled]="contactForm.invalid || isSubmitting">
+        {{ isSubmitting ? 'Sending...' : 'Send Message' }}
+      </button>
+
+    </div>
+  </form>
+ <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
+</div> -->
+<!-- Contact Form -->
+<div class="contact-intro">
+  Have an idea, question, or opportunity? Let's get in touch!👇
+  <!-- <div class="hand-down"></div> -->
+</div>
+
+<div class="contact-section">
+  <div class="contact-container">
+    <h2>Contact Me</h2>
+    <form (ngSubmit)="onSubmit()" [formGroup]="contactForm" class="contact-form">
+      <div class="form-group">
+        <label for="name">Name<span class="required">*</span></label>
+        <input formControlName="name" id="name" type="text" required />
+      </div>
+      <small *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">Name is required.</small>
+
+      <div class="form-group">
+        <label for="email">Email<span class="required">*</span></label>
+        <input formControlName="email" id="email" type="email" required />
+      </div>
+      <small *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">Please enter a valid email.</small>
+
+      <div class="form-group">
+        <label for="phone">Phone<span class="required">*</span></label>
+        <input formControlName="phone" id="phone" type="text" required />
+      </div>
+      <small *ngIf="contactForm.get('phone')?.invalid && contactForm.get('phone')?.touched">Enter 10-digit phone.</small>
+
+      <div class="form-group">
+        <label for="message">Message<span class="required">*</span></label>
+        <textarea formControlName="message" id="message" rows="4" required></textarea>
+      </div>
+      <small *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched">Message is required.</small>
+
+      <div class="btn-container">
+        <button type="submit" [disabled]="contactForm.invalid || isSubmitting">
+          {{ isSubmitting ? 'Sending...' : 'Send Message' }}
+        </button>
+      </div>
+    </form>
+    <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
+  </div>
+
+  <!-- Right Side Card -->
+  <div class="open-to-card">
+    <h3>Currently Open To</h3>
+    <ul>
+      <li>Full-time Software Development roles</li>
+      <!-- <li>Internship opportunities</li> -->
+      <li>Freelance & Remote projects</li>
+      <li>Part-time development roles</li>
+      <li>Junior Frontend/Backend Developer roles</li>
+      <li>Technical Content Writing</li>
+      <li>UI/UX improvement projects</li>
+      <li>API integration and backend support roles</li>
+          </ul>
+  </div>
+</div>
+
+<!-- Bottom Social Icons -->
+<div class="contact-social-icons">
+  <a href="https://github.com/deepikaverma2906" target="_blank"><i class="fab fa-github"></i></a>
+  <a href="https://www.linkedin.com/in/deepika-verma-831bba285/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://mail.google.com/mail/?view=cm&to=deeparv296@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+  <a href="https://www.facebook.com/deepika.nimaje" target="_blank"><i class="fab fa-facebook"></i></a>
+  <a href="https://www.instagram.com/deepikanimaje/" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>

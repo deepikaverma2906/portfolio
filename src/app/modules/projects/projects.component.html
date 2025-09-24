@@ -1,0 +1,28 @@
+<section class="projects-section" id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="projects-container">
+    <div class="project-card" *ngFor="let project of projects">
+      <img [src]="project.image" alt="Project Image" class="project-image" />
+      <div class="project-content">
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.description }}</p>
+        <div class="tech-stack">
+          <span class="tech" *ngFor="let tech of project.techStack">{{ tech }}</span>
+        </div>
+
+        <ng-container [ngSwitch]="project.status">
+
+        <!-- <a href="https://loquacious-marigold-9c509b.netlify.app/" target="_blank" class="project-link">🔗 Live
+          Preview</a> -->
+
+        <!-- <a [href]="https://loquacious-marigold-9c509b.netlify.app/" target="_blank" class="project-link">🔗 Live Preview</a> -->
+        <a *ngSwitchCase="'live'" [href]="project.link" target="_blank" class="project-link">
+          🔗 Live Preview
+        </a>
+        <span *ngSwitchCase="'coming-soon'" class="coming-soon"> Coming Soon</span>
+      </ng-container>
+
+      </div>
+    </div>
+  </div>
+</section>
