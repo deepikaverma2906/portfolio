@@ -21,7 +21,7 @@ export class ProjectsComponent {
       title: "Portfolio Website",
       description: "Personal portfolio showcasing skills, projects, and resume with smooth scrolling.",
       techStack: ["Angular", "CSS", "HTML","Javascript","node"],
-      link: "http://localhost:4200/",
+      link: "https://portfoliof-mn2o.onrender.com/",
       image: "assets/projects/portfolio1.PNG",
       status: "live"
 
