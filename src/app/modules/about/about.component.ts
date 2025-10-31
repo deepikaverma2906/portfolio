@@ -46,6 +46,7 @@ import { Component, OnInit } from '@angular/core';
 export class AboutComponent implements OnInit {
   profileImageUrl: string = 'assets/profile.jpg'; // static image
   resumeDownloadUrl: string = 'assets/resume.pdf'; // static resume
+  // Deepika_Verma_Resume2
 
   constructor() {}
 
